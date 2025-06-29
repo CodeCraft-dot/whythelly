@@ -154,18 +154,19 @@ def login():
         </div>
       </div>
 
-      <script>
-        document.getElementById('eye').addEventListener('click', function () {
-          const passwordInput = document.getElementById('password');
-          if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-            this.textContent = '🙈';
-          } else {
-            passwordInput.type = 'password';
-            this.textContent = '👁️';
-          }
-        });
-      </script>
+     # Replace the script section with this properly escaped version:
+<script>
+document.getElementById('eye').addEventListener('click', function () {{
+  const passwordInput = document.getElementById('password');
+  if (passwordInput.type === 'password') {{
+    passwordInput.type = 'text';
+    this.textContent = '🙈';
+  }} else {{
+    passwordInput.type = 'password';
+    this.textContent = '👁️';
+  }}
+}});
+</script>
     </body>
     </html>
     '''
